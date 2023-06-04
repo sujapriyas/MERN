@@ -1,0 +1,112 @@
+<html>
+<head><b>TASK8</b>
+  <style>
+    button {
+      position: relative;
+      left: 730px;
+      top: 20px;
+    }
+
+    table {
+      margin: 0 30% 0;
+      width: 40%;
+      height: 500px;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    .in {
+      margin: 0;
+      width: 100%;
+      height: 82%;
+    }
+  </style>
+  <center>
+    <h1 style="color:blue;">
+      Registration form
+    </h1>
+  </center>
+</head>
+
+<body>
+  <table Border="1" cellspacing="0px">
+    <tr>
+      <td align-center>First name:</td>
+      <td class="style1"><input class="in" type="text" name="first name" /></td>
+    </tr>
+    <tr>
+      <td style="text-align:center">Last name:</td>
+      <td class="style1"><input class="in" type="text" name="last name" /></td>
+    </tr>
+    <tr>
+      <td align-center>Email:</td>
+      <td class="style1"><input class="in" type="text" name="email" /></td>
+    </tr>
+    <tr>
+      <td align-center>Password:</td>
+      <td class="style1"><input class="in" type="password" name="password" /></td>
+    </tr>
+    <tr>
+      <td align-center>Re-enter Password:</td>
+      <td class="style1"><input class="in" type="password" name="repassword" /></td>
+    </tr>
+    <tr>
+      <td rowspan="2" align-center>Gender:</td>
+      <td>
+        <input type="radio" name="gender" value="male">Male
+    </tr>
+    <tr>
+      <td><input type="radio" name="gender" value="female">Female </td>
+    </tr>
+    <tr>
+      <td align-center>Age:</td>
+      <td class="style1"><input class="in" type="number" name="age" /></td>
+    </tr>
+    <tr>
+      <td align-center>Phone Number:</td>
+      <td class="style1"><input class="in" type="tel" name="phone" pattern="[9]{1}-[0-9]{9}" /></td>
+    </tr>
+    <tr>
+      <td align-center>Address:</td>
+      <td><textarea style="width:99%;height:90%;" rows="5" cols="55" name="address"></textarea></td>
+    </tr>
+    <tr>
+      <td align-center>State:</td>
+      <td class="style1"><input class="in" type="text" name="state" /></td>
+    </tr>
+    <tr>
+      <td align-center>Country:</td>
+      <td>
+        </select>
+        <select name="country">
+          <option value="choose" selected="selected">choose your country</option>
+          <option value="india">India</option>
+          <option value="america">America</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td align-center>Language known:</td>
+      <td>
+        <input type="checkbox" name="language " value="english">English
+        <input type="checkbox" name="language" value="kannada">Kannada
+        <input type="checkbox" name="language " value="hindi">Hindi
+        <input type="checkbox" name="language" value="telugu">Telugu
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="checkbox">Hereby I declare all the above details are true.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align-right>Log in to
+        <a href="https://codemithra.com" target="_blank">Ethunus</a> website
+      </td>
+    </tr>
+  </table>
+  <button>Register</button>
+</body>
+</html>
