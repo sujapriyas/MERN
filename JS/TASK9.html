@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: hsl(0, 3%, 6%);
+                margin-top: 10%;
+                margin-left: 30%;
+
+
+            }
+           
+            th{
+               
+                font-size: larger;
+                font-weight: 700;
+                color: #f0f00e;
+                text-align: center;
+            }
+            td{
+                font-size: larger;
+                font-weight: 400;
+                color: beige;
+            }
+         
+            .btn{
+                
+                height: 30px;
+                
+                border-style: none;
+                background-color:darkcyan;
+            }
+
+        </style>
+        <script>
+            function formValidation(){
+                var name = document.f.name;
+                var email = document.f.email;
+                var password = document.f.pswd;
+                var number = document.f.number;
+               
+                var language = document.f.language;
+                var zip = document.f.zip;
+                var about = document.f.about;
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form name="f" onsubmit="return formValidation();">
+                <table>
+                    <tr>
+                        <th>Registration Form</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Name:
+                        </td>
+                        <td>
+                            <input type="text" name="name" placeholder="your name">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Email:
+                        </td>
+                        <td>
+                            <input type="text" name="email" placeholder="your email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password:
+                        </td>
+                        <td>
+                            <input type="password" name="pswd" placeholder="enter password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone Number:
+                        </td>
+                        <td>
+                            <input type="number" name="number" placeholder="your phone number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender:
+                        </td>
+                        <td>
+                            <input type="radio" name="g">Male
+                            <input type="radio" name="g">Female
+                            <input type="radio" name="g">Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Language:
+                        </td>
+                        <td>
+                            <select name="language">
+                                <option>---select---</option>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Tamil</option>
+                                <option>Telugu</option>
+                                <option>Kannada</option>
+                                <option>Malayalam</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Zip Code:
+                        </td>
+                        <td>
+                            <input type="text" name="zip">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            About:
+                        </td>
+                        <td>
+                            <textarea name="about" rows="5" cols="20"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="btn" name="submit" type="submit" value="Register">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

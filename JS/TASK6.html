@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function sortStringAlphabetically(str) {
+  var chars = str.split('');
+  var sortedChars = chars.sort();
+  var sortedString = sortedChars.join('');
+  return sortedString;
+}
+
+    function sortString() {
+      
+      var input = document.getElementById("inputString").value;
+      var sortedString = sortStringAlphabetically(input);
+      document.getElementById("result").textContent = "The Result is :"+sortedString;
+    }
+  </script>
+  <style>
+    body{
+        background-color: white;
+        margin-top: 10%;
+        margin-left: 35%;
+    }
+    .btn{
+        margin-top: 30%;
+        margin-left: 100%;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+        border-style: none;
+
+        background-color:forestgreen;
+    }
+    h2{
+        margin-left: 5%;
+        color: forestgreen;
+        font-size: xx-large;
+        font-weight: 600;
+    }
+    div ,h3, td{
+        color: darkviolet;
+        font-size: larger;
+        font-weight: 500;
+    }
+
+    .container{
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: larger;
+        font-weight: 700;
+        color:red;
+    }
+    .text-field{
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+  </style>
+</head>
+<body>
+  <form>
+ <h2>String Sortener</h2>
+ <table>
+    <tr>
+        <td>Enter a string:</td>
+        <td></td>
+        <td></td>
+        <td> <input class="text-field" type="text" id="inputString" name="inputString"></td>
+    </tr>
+    <tr>
+        <td>
+            <button class="btn" type="button" onclick="sortString()">Result</button>
+        </td>
+      
+    </tr>
+ </table>
+  </form>
+
+  <div class="container" id="result">
+  </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+    .container{
+        margin-top: 10%;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        border-style: solid;
+        background-color:#2e2be2;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .container .btn{
+        background-color: #096409;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container .btn-clear{
+        background-color: red;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+</style>
+<script>
+function reverse()
+{
+    num = eval(f.n1.value);
+                let r_num=0;
+                while(num >0)
+                {
+                    r_num = r_num * 10 + num %10;
+                    num = Math.floor(num/10);
+                }
+                f.n2.value = r_num;
+}
+</script>
+
+</head>
+<body>
+<form  name = f>
+<table class="container">
+<tr>
+<td>
+Enter any Number :
+</td>
+<td>
+<input type = text name  =n1>
+</td>
+</tr>
+<tr>
+<td>
+Reverse Number is:
+</td>
+<td>
+<input type = text name = n2>
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td>
+<input class="btn" type = button value ="Reverse" onclick =reverse()>
+</td>
+<td>
+    <input class="btn-clear" type="reset" value="Clear">
+</td>
+</tr>
+
+
+
+</body>
+</html>
+
